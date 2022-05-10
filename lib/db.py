@@ -11,5 +11,12 @@ class DBConnection():
 
         # Create Account Table
         self.cur.execute('''CREATE TABLE accounts
-        (id, name ''')
+        (id, name, bank, created, balance, updated''')
+
+        # Create Transactions Table
+        self.cur.execute(''' CREATE TABLE transactions
+        (id, date, desc, payee, posted''')
+
+        self.con.commit()
+        self.con.close()
 
