@@ -28,7 +28,9 @@ class Transaction(object):
         #Check in with database, double check before adding to account balance, sanitize data.
         print("stub")
 
-    def get
+    #def get(self):
+     #   """Get transaction by ID from MySQL"""
+     #   self.id =
 
 
 

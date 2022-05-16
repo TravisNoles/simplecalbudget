@@ -17,6 +17,9 @@ class DBConnection():
         self.cur.execute(''' CREATE TABLE transactions
         (id, date, desc, payee, posted''')
 
+
+    def getTransaction(self):
+        #for row in self.cur.execute('SELECT * FROM ')
         self.con.commit()
         self.con.close()
 
